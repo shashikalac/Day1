@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massive Online Sale</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; 
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffcc00, #ff6600);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            border-bottom: 5px solid #ff6600;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        section {
+            background: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #ff6600;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 8px 0;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "#"; 
+            position: absolute;
+            left: -10px; 
+            font-size: 1.0em;
+        }
+        .featured-products {
+    display: flex;
+    justify-content: space-between; /* Evenly space the products */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    gap: 20px; /* Space between products */
+    margin: 20px 0;
+}
+
+.featured-products h2 {
+    width: 100%; /* Ensure the heading spans the full width */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product {
+    flex: 1 1 calc(33.333% - 20px); /* Three products per row, with a gap */
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align content */
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-3px);
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.price strong {
+    font-size: 1.4em;
+    color: #ff6600;
+}
+.terms {
+            margin-top: 30px;
+            font-size: 1em;
+            width: 1000px;
+        }
+        dl {
+            margin: 0;
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+@media (max-width: 768px) {
+    .product {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        flex: 1 1 100%;
+    }
+}
+
+.product p b i {
+    color: #ff6600; /* Use the brand color for emphasis */
+    font-weight: bold; /* Reinforce bolding */
+    font-style: italic; /* Italic styling */
+}
+
+
+
+        .price {
+            font-size: 1.2em;
+            color: #ff6600;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #ffcc00;
+            border-top: 5px solid #ff6600;
+        }
+
+        footer h2 {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #d35400; /* Darker shade on hover */
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.2em;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 Massive Online Sale: Unbeatable Deals Await! 🎉</h1>
+        <p class="subtitle">Shop Smart, Save Big!</p>
+        <p><italic>On 27th</italic></p>
+    </header>
+    <main>
+        <section class="sale-info">
+            <h2>What’s on Sale?</h2>
+            <ul>
+                <li>🔥 Up to <strong>50% OFF</strong> on Selected Items!</li>
+                <li>🛒 Buy One Get One <strong>50% OFF</strong> on All Accessories!</li>
+                <li>🎁 Free Shipping on Orders Over <strong>$50</strong>!</li>
+            </ul>
+        </section>
+        <section class="featured-products">
+
+          <section class="featured-products">
+    <h2>Featured Products:</h2>
+    <div class="product">
+        <img src="C:\Users\user\Desktop\New folder\Day 1\img\sneaker.jpg" alt="Stylish Sneakers" class="product-image">
+        <h3>Stylish Sneakers</h3>
+        <p><b><i>Comfortable</i></b> and <b><i>trendy</i></b> sneakers for all occasions.</p>
+        <p>Chemical Composition: <strong>Polyurethane (C<sub>3</sub>H<sub>8</sub>N)</strong></p>
+        <p class="price">
+            <span class="original-price">$69.99</span> <strong>$49.99</strong>
+        </p>
+    </div>
+   
+    <div class="product">
+        <img src="C:\Users\user\Desktop\New folder\Day 1\kidsshoe.jpg" alt="Luxury Watch" class="product-image">
+        <h3>Kids Shoe</h3>
+        <p><b><i>Comfortable</i></b> and <b><i>trendy</i></b> sneakers for all occasions.</p>
+        <p>Chemical Composition: <strong>Polyurethane (C<sub>3</sub>H<sub>8</sub>N)</strong></p>
+        <p class="price">
+            <span class="original-price">$349.99</span> <strong>$299.99</strong>
+        </p>
+    </div>
+</section>
+        <section>
+<div class="terms">
+    <h2>Terms and Conditions</h2>
+    <dl>
+        <dt>Offer Validity</dt>
+        <dd>Offer valid only until stocks last. Prices subject to change after the sale ends.</dd>
+        
+        <dt>Shipping</dt>
+        <dd>Free shipping on orders above $50.</dd>
+        
+        <dt>Return Policy</dt>
+        <dd>30-day return policy. Conditions apply.</dd>
+    </dl>
+</div>
+</section>
+        <section class="testimonial">
+            <h2>Customer Testimonial</h2>
+            <p>
+                "I recently purchased a few items during the Massive Online Sale, and I couldn't be happier! 
+                The discounts were incredible, and the quality of the products exceeded my expectations. 
+                Fast shipping and excellent customer service made the experience even better. 
+                I will definitely be shopping here again!" - <strong>JOHN</strong>
+            </p>
+            <audio controls>
+                <source src="testimonial-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls width="30%">
+                <source src="testimonial-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+        </section>
+        
+    
+    </main>
+    <footer>
+        <h2>Shop Now!</h2>
+        <p>Visit our website and start saving today!</p>
+      
+    </footer>
+</body>
+</html>
